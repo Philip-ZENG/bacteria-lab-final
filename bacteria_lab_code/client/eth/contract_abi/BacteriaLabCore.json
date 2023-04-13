@@ -1,0 +1,383 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint8",
+				"name": "playerID",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "attackNutrition",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "targetColonyID",
+				"type": "uint8"
+			}
+		],
+		"name": "attack",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "ownerAddress",
+				"type": "address"
+			}
+		],
+		"name": "createNFT",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "endGame",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "enterGame",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint8",
+				"name": "startID",
+				"type": "uint8"
+			}
+		],
+		"name": "initializeGame",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "initializeGameManager",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint8",
+				"name": "playerID",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "targetColonyID",
+				"type": "uint8"
+			}
+		],
+		"name": "occupy",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "startGame",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "creator",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "updateState",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "gameInitVar",
+		"outputs": [
+			{
+				"internalType": "uint8",
+				"name": "MAP_WIDTH",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "MAP_LENGTH",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "PLAYER_INITIAL_NUTRITION",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "COLONY_MAX_ABSORPTION_RATE",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "COLONY_MAX_DEFENSE_NUTRITION",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "COLONY_MAX_OCCUPY_NUTRITION",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "COLONY_NUTRITION_ABSORPTION_INIT_RANDOM_SEED",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "COLONY_DEFENSE_NUTRITION_INIT_RANDOM_SEED",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "COLONY_OCCUPY_NUTRITION_INTI_RANDOM_SEED",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "gameManager",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "adminAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "uint8",
+				"name": "time",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "mapWidth",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "mapLength",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "totalColonyCount",
+				"type": "uint8"
+			},
+			{
+				"internalType": "bool",
+				"name": "isInit",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "isStart",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "isEnd",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint8",
+				"name": "playerCount",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "NFTCount",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint8",
+				"name": "colonyID",
+				"type": "uint8"
+			}
+		],
+		"name": "getColonyInfo",
+		"outputs": [
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			},
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getLatestGeneratedNFTID",
+		"outputs": [
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint8",
+				"name": "nftID",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "tileID",
+				"type": "uint8"
+			}
+		],
+		"name": "getNftTileInfo",
+		"outputs": [
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "playerAddress",
+				"type": "address"
+			}
+		],
+		"name": "getPlayerID",
+		"outputs": [
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint8",
+				"name": "playerID",
+				"type": "uint8"
+			}
+		],
+		"name": "getPlayerInfo",
+		"outputs": [
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			},
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "pickWinner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
